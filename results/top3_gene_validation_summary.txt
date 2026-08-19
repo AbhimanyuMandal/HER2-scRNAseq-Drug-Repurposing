@@ -1,0 +1,9 @@
+TOP 3 DRUG GENE-LEVEL VALIDATION
+================================
+
+neratinib: 5858 significant directional genes
+vorinostat: 435 significant directional genes
+bortezomib: 435 significant directional genes
+
+Vorinostat/Bortezomib shared genes: 435
+Genes shared by all three: 214

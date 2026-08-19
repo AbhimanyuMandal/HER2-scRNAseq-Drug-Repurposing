@@ -1,0 +1,14 @@
+"Drug","CID4066_vs_Normal","CID3586_vs_Normal","CID4066_vs_CID3586","Candidate.class","Drug.therapeutic.score","P.value","FDR"
+"colchicine",1,1,0,"Shared disease-state",NA,NA,NA
+"mebendazole",1,1,0,"Shared disease-state",NA,NA,NA
+"estriol",1,1,0,"Shared disease-state",NA,NA,NA
+"neratinib",1,0,1,"Transition-associated",0.743883469025108,1.84119477931945e-13,1.83198880542285e-10
+"droperidol",1,0,0,"Other",NA,NA,NA
+"paclitaxel",0,1,0,"Other",NA,NA,NA
+"menadione",0,1,0,"Other",NA,NA,NA
+"vorinostat",0,0,1,"Treatment-contrast-specific",0.793157975253944,5.5039789329045e-09,1.82548634607999e-06
+"bortezomib",0,0,1,"Treatment-contrast-specific",0.509535360053268,2.42589822908769e-05,0.00344824105420322
+"tretinoin",0,0,1,"Treatment-contrast-specific",0.199680533324824,6.10000676874746e-06,0.00119231340731211
+"sorafenib",0,0,1,"Treatment-contrast-specific",0.134679131000243,0.000668262267046078,0.0443280637140565
+"raloxifene",0,0,1,"Treatment-contrast-specific",0.131117852863528,0.000301322499032107,0.0249846572114122
+"pazopanib",0,0,1,"Treatment-contrast-specific",0.107964902761958,7.18982959183181e-06,0.00119231340731211

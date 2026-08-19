@@ -1,0 +1,41 @@
+"Drug","Drug.therapeutic.score","Drug.P.value","Cell.type","Direction","Pathway","term_id","source","p_value","intersection_size","query_size"
+"bortezomib",0.509535360053268,2.42589822908769e-05,"Basal_epithelial_cells","UP","Extracellular matrix organization","REAC:R-HSA-1474244","REAC",1.54598685709706e-21,47,285
+"bortezomib",0.509535360053268,2.42589822908769e-05,"Basal_epithelial_cells","UP","collagen fibril organization","GO:0030199","GO:BP",5.54059072196185e-20,23,381
+"bortezomib",0.509535360053268,2.42589822908769e-05,"Basal_epithelial_cells","UP","extracellular matrix organization","GO:0030198","GO:BP",1.67176928042579e-17,38,381
+"bortezomib",0.509535360053268,2.42589822908769e-05,"Basal_epithelial_cells","UP","extracellular structure organization","GO:0043062","GO:BP",1.87632485316575e-17,38,381
+"bortezomib",0.509535360053268,2.42589822908769e-05,"Basal_epithelial_cells","UP","external encapsulating structure organization","GO:0045229","GO:BP",2.1049496980649e-17,38,381
+"bortezomib",0.509535360053268,2.42589822908769e-05,"Basal_epithelial_cells","UP","ATP synthesis coupled electron transport","GO:0042773","GO:BP",4.19188783328936e-16,23,381
+"bortezomib",0.509535360053268,2.42589822908769e-05,"Basal_epithelial_cells","UP","mitochondrial ATP synthesis coupled electron transport","GO:0042775","GO:BP",4.19188783328936e-16,23,381
+"bortezomib",0.509535360053268,2.42589822908769e-05,"Basal_epithelial_cells","UP","aerobic electron transport chain","GO:0019646","GO:BP",1.66857571060058e-15,22,381
+"bortezomib",0.509535360053268,2.42589822908769e-05,"Basal_epithelial_cells","UP","oxidative phosphorylation","GO:0006119","GO:BP",2.93904199130346e-15,26,381
+"bortezomib",0.509535360053268,2.42589822908769e-05,"Basal_epithelial_cells","UP","respiratory electron transport chain","GO:0022904","GO:BP",1.59305701098183e-14,23,381
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.1_epithelial_cells","DOWN","Peptide chain elongation","REAC:R-HSA-156902","REAC",2.81550059526385e-131,66,86
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.1_epithelial_cells","DOWN","Eukaryotic Translation Elongation","REAC:R-HSA-156842","REAC",4.16328735482394e-129,66,86
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.1_epithelial_cells","DOWN","Viral mRNA Translation","REAC:R-HSA-192823","REAC",3.87460203380429e-128,65,86
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.1_epithelial_cells","DOWN","Nonsense Mediated Decay (NMD) independent of the Exon Junction Complex (EJC)","REAC:R-HSA-975956","REAC",4.34860039116543e-128,66,86
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.1_epithelial_cells","DOWN","Selenocysteine synthesis","REAC:R-HSA-2408557","REAC",4.93735424510651e-126,65,86
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.1_epithelial_cells","DOWN","Eukaryotic Translation Termination","REAC:R-HSA-72764","REAC",4.93735424510651e-126,65,86
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.1_epithelial_cells","DOWN","Response of EIF2AK4 (GCN2) to amino acid deficiency","REAC:R-HSA-9633012","REAC",2.7623754825183e-122,65,86
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.1_epithelial_cells","DOWN","Formation of a pool of free 40S subunits","REAC:R-HSA-72689","REAC",2.7623754825183e-122,65,86
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.1_epithelial_cells","DOWN","L13a-mediated translational silencing of Ceruloplasmin expression","REAC:R-HSA-156827","REAC",4.05525355207054e-121,66,86
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.1_epithelial_cells","DOWN","Nonsense Mediated Decay (NMD) enhanced by the Exon Junction Complex (EJC)","REAC:R-HSA-975957","REAC",1.25176177856022e-119,66,86
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.2_epithelial_cells","DOWN","Eukaryotic Translation Elongation","REAC:R-HSA-156842","REAC",1.51075759025459e-79,63,260
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.2_epithelial_cells","DOWN","Peptide chain elongation","REAC:R-HSA-156902","REAC",2.37225808597685e-77,61,260
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.2_epithelial_cells","DOWN","L13a-mediated translational silencing of Ceruloplasmin expression","REAC:R-HSA-156827","REAC",5.07538747003794e-76,65,260
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.2_epithelial_cells","DOWN","Nonsense Mediated Decay (NMD) independent of the Exon Junction Complex (EJC)","REAC:R-HSA-975956","REAC",1.21606560627744e-74,61,260
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.2_epithelial_cells","DOWN","GTP hydrolysis and joining of the 60S ribosomal subunit","REAC:R-HSA-72706","REAC",8.54381894656413e-74,64,260
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.2_epithelial_cells","DOWN","Eukaryotic Translation Termination","REAC:R-HSA-72764","REAC",1.58906403930264e-73,60,260
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.2_epithelial_cells","DOWN","Viral mRNA Translation","REAC:R-HSA-192823","REAC",2.69477106651966e-73,59,260
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.2_epithelial_cells","DOWN","Cap-dependent Translation Initiation","REAC:R-HSA-72737","REAC",3.04004145054205e-73,65,260
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.2_epithelial_cells","DOWN","Eukaryotic Translation Initiation","REAC:R-HSA-72613","REAC",3.04004145054205e-73,65,260
+"neratinib",0.743883469025108,1.84119477931945e-13,"Luminal_L1.2_epithelial_cells","DOWN","Formation of a pool of free 40S subunits","REAC:R-HSA-72689","REAC",3.26847511457913e-72,61,260
+"vorinostat",0.793157975253944,5.5039789329045e-09,"Basal_epithelial_cells","UP","Extracellular matrix organization","REAC:R-HSA-1474244","REAC",1.54598685709706e-21,47,285
+"vorinostat",0.793157975253944,5.5039789329045e-09,"Basal_epithelial_cells","UP","collagen fibril organization","GO:0030199","GO:BP",5.54059072196185e-20,23,381
+"vorinostat",0.793157975253944,5.5039789329045e-09,"Basal_epithelial_cells","UP","extracellular matrix organization","GO:0030198","GO:BP",1.67176928042579e-17,38,381
+"vorinostat",0.793157975253944,5.5039789329045e-09,"Basal_epithelial_cells","UP","extracellular structure organization","GO:0043062","GO:BP",1.87632485316575e-17,38,381
+"vorinostat",0.793157975253944,5.5039789329045e-09,"Basal_epithelial_cells","UP","external encapsulating structure organization","GO:0045229","GO:BP",2.1049496980649e-17,38,381
+"vorinostat",0.793157975253944,5.5039789329045e-09,"Basal_epithelial_cells","UP","ATP synthesis coupled electron transport","GO:0042773","GO:BP",4.19188783328936e-16,23,381
+"vorinostat",0.793157975253944,5.5039789329045e-09,"Basal_epithelial_cells","UP","mitochondrial ATP synthesis coupled electron transport","GO:0042775","GO:BP",4.19188783328936e-16,23,381
+"vorinostat",0.793157975253944,5.5039789329045e-09,"Basal_epithelial_cells","UP","aerobic electron transport chain","GO:0019646","GO:BP",1.66857571060058e-15,22,381
+"vorinostat",0.793157975253944,5.5039789329045e-09,"Basal_epithelial_cells","UP","oxidative phosphorylation","GO:0006119","GO:BP",2.93904199130346e-15,26,381
+"vorinostat",0.793157975253944,5.5039789329045e-09,"Basal_epithelial_cells","UP","respiratory electron transport chain","GO:0022904","GO:BP",1.59305701098183e-14,23,381

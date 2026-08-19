@@ -1,0 +1,27 @@
+FINAL COMPUTATIONAL DRUG-REPURPOSING CANDIDATES
+==============================================
+
+Rank 1: neratinib
+Candidate class: Transition-associated
+Therapeutic score: 0.7439
+Drug FDR: 1.831989e-10
+Cell types: Luminal_L1.1_epithelial_cells; Luminal_L1.2_epithelial_cells
+Pathway themes: Metabolic processes; Other; Translation / ribosomal processes
+Final evidence score: 0.9212
+
+Rank 2: vorinostat
+Candidate class: Treatment-contrast-specific
+Therapeutic score: 0.7932
+Drug FDR: 1.825486e-06
+Cell types: Basal_epithelial_cells
+Pathway themes: ECM / extracellular structure; Mitochondrial respiration / oxidative phosphorylation
+Final evidence score: 0.7058
+
+Rank 3: bortezomib
+Candidate class: Treatment-contrast-specific
+Therapeutic score: 0.5095
+Drug FDR: 3.448241e-03
+Cell types: Basal_epithelial_cells
+Pathway themes: ECM / extracellular structure; Mitochondrial respiration / oxidative phosphorylation
+Final evidence score: 0.4425
+

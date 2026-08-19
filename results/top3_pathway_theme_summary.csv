@@ -1,0 +1,9 @@
+"Drug","Cell.type","Direction","Theme","Pathway.count","Best.p.value","Best.pathway","Max.intersection"
+"bortezomib","Basal_epithelial_cells","UP","ECM / extracellular structure",5,1.54598685709706e-21,"Extracellular matrix organization",47
+"bortezomib","Basal_epithelial_cells","UP","Mitochondrial respiration / oxidative phosphorylation",5,4.19188783328936e-16,"ATP synthesis coupled electron transport",26
+"neratinib","Luminal_L1.1_epithelial_cells","DOWN","Translation / ribosomal processes",8,2.81550059526385e-131,"Peptide chain elongation",66
+"neratinib","Luminal_L1.1_epithelial_cells","DOWN","Other",1,4.93735424510651e-126,"Selenocysteine synthesis",65
+"neratinib","Luminal_L1.1_epithelial_cells","DOWN","Metabolic processes",1,2.7623754825183e-122,"Response of EIF2AK4 (GCN2) to amino acid deficiency",65
+"neratinib","Luminal_L1.2_epithelial_cells","DOWN","Translation / ribosomal processes",10,1.51075759025459e-79,"Eukaryotic Translation Elongation",65
+"vorinostat","Basal_epithelial_cells","UP","ECM / extracellular structure",5,1.54598685709706e-21,"Extracellular matrix organization",47
+"vorinostat","Basal_epithelial_cells","UP","Mitochondrial respiration / oxidative phosphorylation",5,4.19188783328936e-16,"ATP synthesis coupled electron transport",26
