@@ -1,77 +1,53 @@
-# Analysis Overview
+# Analysis Workflow
 
-## Project Context
+The analysis was performed as a multi-stage computational drug
+repurposing workflow.
 
-This repository contains a computational single-cell RNA-seq drug-repurposing
-analysis originally conducted during an internship in 2023.
+## Stage 1 — Dataset preparation
 
-The analysis was subsequently reconstructed and organized to document the
-original workflow, scripts, intermediate analyses, validation steps, and
-final results.
+Normal breast epithelial and HER2-positive breast cancer scRNA-seq
+datasets were processed and integrated.
 
-## Analysis Workflow
+## Stage 2 — Differential expression
 
-The analysis consisted of the following major stages:
+Differentially expressed genes were identified using limma-based
+comparisons between:
 
-1. Dataset loading and preprocessing
-2. Single-cell reference/query alignment
-3. Cell-type annotation and comparison
-4. Differential expression analysis
-5. Drug signature scoring
-6. Comparative drug analysis across HER2 conditions
-7. Pathway enrichment analysis
-8. Drug–pathway evidence integration
-9. Comparative candidate validation
-10. Final evidence-based drug ranking
-11. Top-candidate pathway validation
-12. Top-candidate gene-level validation
-13. Figure generation
+- HER2-positive breast cancer and normal breast
+- CID4066 and normal
+- CID3586 and normal
+- CID4066 and CID3586
 
-## Script Organization
+## Stage 3 — Drug signature scoring
 
-| Script | Description |
-|---|---|
-| `01_loading_dataset.R` | Loads and prepares the datasets and metadata |
-| `02_single_cell_alignment.R` | Performs reference/query alignment and cell-type annotation |
-| `03_DEG_limma.R` | Performs differential expression analysis |
-| `04_prepare_drug_reference.R` | Prepares the drug reference data |
-| `05_drug_scoring.R` | Calculates drug therapeutic scores |
-| `06_drug_comparison.R` | Compares drug signatures across conditions |
-| `07_pathway_enrichment.R` | Performs pathway enrichment analysis |
-| `08_pathway_drug_integration.R` | Integrates pathway and drug evidence |
-| `09_comparative_validation.R` | Classifies and validates drug candidates |
-| `10_final_evidence_scoring.R` | Calculates the final evidence-based ranking |
-| `11_top3_pathway_validation.R` | Validates pathway evidence for the top candidates |
-| `12_top3_gene_validation.R` | Performs gene-level validation of top candidates |
-| `13_generate_figures.R` | Generates the final project figures |
+Disease-associated transcriptional signatures were compared with
+LINCS perturbational signatures to identify candidate drugs.
 
-## Conceptual Workflow
+## Stage 4 — Pathway analysis
 
-Dataset
-→ Single-cell alignment
-→ Cell-type annotation
-→ Differential expression
-→ Drug signature scoring
-→ Pathway enrichment
-→ Drug–pathway integration
-→ Comparative validation
-→ Evidence scoring
-→ Top candidate identification
-→ Pathway and gene validation
+Candidate drug-associated transcriptional changes were evaluated
+using pathway enrichment analysis.
 
-## Final Candidate Prioritization
+## Stage 5 — Comparative validation
 
-The final analysis prioritized candidates using multiple evidence layers,
-including therapeutic drug scores, statistical significance, cell-type
-specificity, pathway evidence, and gene-level validation.
+Candidates were classified according to their relationship with
+the disease and treatment/transition contrasts.
 
-The final analysis identified:
+## Stage 6 — Evidence-based ranking
 
-1. Neratinib
-2. Vorinostat
-3. Bortezomib
+Candidate drugs were ranked using integrated evidence from:
 
-as the top three computationally prioritized candidates.
+- therapeutic/drug signature score
+- statistical significance
+- cell-type specificity
+- pathway-level evidence
+- non-redundant biological pathway themes
 
-These rankings represent computational prioritization and should not be
-interpreted as clinical efficacy or therapeutic recommendation.
+## Stage 7 — Top candidate validation
+
+The top three candidates were subjected to additional pathway and
+gene-level validation.
+
+## Stage 8 — Visualization
+
+Final results were summarized using four publication-style figures.
