@@ -264,7 +264,7 @@ HER2-scRNAseq-Drug-Repurposing/
 │   └── 13_generate_figures.R
 │
 ├── assets/
-│   ├── hulab_bannner.png
+│   ├── hulab_banner.png
 │   └── hulab_workflow.png
 |
 ├── results/
@@ -364,6 +364,12 @@ Important limitations include:
 - The final evidence score is an analytical prioritization metric rather than a clinical efficacy score.
 
 Therefore, the top-ranked candidates should be interpreted as hypotheses for further investigation.
+
+---
+
+# Reproducibility note:
+
+The repository documents the reconstructed analysis workflow and final results from the original internship project. Some scripts reference the original institutional analysis directory structure and therefore are not currently configured as a fully portable end-to-end pipeline. The repository does not redistribute the original large-scale datasets.
 
 ---
 
