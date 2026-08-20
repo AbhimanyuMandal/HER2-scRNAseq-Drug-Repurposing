@@ -364,3 +364,56 @@ Important limitations include:
 - The final evidence score is an analytical prioritization metric rather than a clinical efficacy score.
 
 Therefore, the top-ranked candidates should be interpreted as hypotheses for further investigation.
+
+---
+
+# References
+
+Key resources used in the project include:
+
+- Seurat: single-cell RNA-seq analysis
+- GEO: Gene Expression Omnibus
+- LINCS: Library of Integrated Network-Based Cellular Signatures
+- R: statistical computing and visualization
+
+Dataset-specific and software-specific citations should be added when the corresponding resources are used in formal scientific work.
+
+---
+
+# Acknowledgements
+
+This project builds upon publicly available datasets, computational resources, and open-source scientific software.
+
+Special thanks to:
+
+- GEO contributors
+- LINCS / Connectivity Map community
+- Seurat development team
+- R and Bioconductor communities
+- Open-source computational biology community
+
+---
+
+# License
+
+This project is licensed under the **MIT License**.
+
+See the [LICENSE](LICENSE) file for details.
+
+---
+
+# Connect With Me
+
+**Abhimanyu Mandal**
+
+- LinkedIn: https://www.linkedin.com/in/abhimanyu-mandal/
+- Portfolio: https://abhimanyumandal.github.io/Personal-Portfolio/
+- Email: abhimanyumandal0810@gmail.com
+
+---
+
+<div align="center">
+
+### ⭐ If you found this repository useful, please consider giving it a Star!
+
+</div>
