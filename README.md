@@ -23,7 +23,7 @@ Single-cell transcriptomic analysis and LINCS-based computational drug repurposi
 </p>
 ---
 
-## Overview
+# Overview
 
 This project investigated **computational drug repurposing opportunities in HER2-positive breast cancer** using single-cell RNA sequencing (scRNA-seq) and large-scale perturbational gene-expression signatures from the **LINCS L1000** resource.
 
@@ -45,11 +45,11 @@ These candidates represent **computational drug-repurposing hypotheses** and req
 
 ## Project Context
 
-This analysis was originally conducted during a **2023 research internship** involving computational analysis of breast cancer single-cell transcriptomic data.
+**Mitacs Research Internship — Western University, 2023**
 
-The original analysis was not fully documented at the time. The present repository consolidates the analysis scripts, intermediate/final result tables, validation outputs, and figures into a structured and reproducible project.
+This project was conducted as part of a computational biology research internship focused on single-cell transcriptomics and drug repurposing in breast cancer.
 
-> **Note:** The repository documents and organizes the original research workflow; it does not imply that the underlying biological experiments were performed as part of this repository.
+The original analysis was not fully documented at the time. The analysis was subsequently reconstructed and systematically documented in 2026 to preserve the computational workflow, results, and interpretation for reproducibility and portfolio use.
 
 ---
 
@@ -66,6 +66,239 @@ The analysis was designed to address this question through several levels of evi
 5. Evaluate pathway-level biological evidence.
 6. Validate the strongest candidates using gene- and pathway-level evidence.
 7. Produce an integrated evidence-based drug ranking.
+
+---
+
+# Analysis Workflow
+
+The complete computational workflow follows a progressive narrowing strategy:
+
+<p align="center">
+  <img src="assets/hulab_workflow.png" width="90%" alt="HER2 Luminal Breast Cancer Drug Repurposing Workflow">
+</p>
+
+---
+
+# Datasets
+
+## Normal breast tissue
+
+### GSE113197
+
+Normal breast epithelial single-cell RNA-seq data were used to characterize baseline epithelial transcriptional states.
+
+Selected GSM samples from the dataset were analyzed as individual samples.
+
+## HER2- positive breast cancer
+
+### GSE176078
+
+HER2-positive breast cancer single-cell RNA-seq data were used to characterize tumor-associated epithelial states and treatment-associated transcriptional changes.
+
+The analysis included the HER2-positive patient samples:
+
+- CID4066
+- CID3586
+
+## LINCS perturbational data
+
+Drug perturbation signatures were derived from the LINCS/L1000 framework using:
+
+- GSE70138
+- GSE92742
+
+These datasets provide large-scale transcriptional responses to chemical perturbations and were integrated with the disease-associated single-cell signatures.
+
+---
+
+# Analysis
+
+## 1. Dataset loading and preparation [01_loading_dataset.R]
+
+Loads and prepares the single-cell datasets and associated metadata.
+
+Outputs include processed expression objects, metadata, and intermediate datasets required for downstream analysis.
+
+## 2. Single-cell alignment [02_single_cell_alignment.R]
+
+Performs alignment/integration of the relevant single-cell datasets and prepares the HER2-positive breast cancer objects for downstream cell-type-specific analysis.
+
+## 3. Differential expression analysis [03_DEG_limma.R]
+
+Performs cell-type-specific differential expression analysis to identify genes associated with the relevant disease and treatment states.
+
+The resulting transcriptional signatures form the basis for downstream drug-repurposing analysis.
+
+## 4. Drug reference preparation [04_prepare_drug_reference.R]
+
+Prepares the LINCS/L1000 perturbational reference used for drug-response analysis.
+
+## 5. Drug scoring [05_drug_scoring.R]
+
+Scores candidate drugs based on the relationship between disease/treatment-associated transcriptional signatures and LINCS perturbation signatures.
+
+## 6. Drug comparison [06_drug_comparison.R]
+
+Compares drug candidates across cell types and transcriptional states to identify:
+
+- Shared candidates
+- Treatment-associated candidates
+- Transition-associated candidates
+- Cell-type-specific candidates
+
+## 7. Pathway enrichment [07_pathway_enrichment.R]
+
+Performs pathway enrichment analysis on the transcriptional signatures associated with candidate drug perturbations.
+
+Pathways were subsequently grouped into broader biological themes to reduce redundancy.
+
+## 8. Pathway-drug integration [08_pathway_drug_integration.R]
+
+Integrates drug-level scoring with pathway-level evidence to determine whether candidate drugs are supported by coherent biological processes.
+
+## 9. Comparative validation [09_comparative_validation.R]
+
+Performs comparative validation of candidate drugs across disease-associated and treatment-associated transcriptional states.
+
+This step distinguishes candidates based on the type and strength of evidence supporting them.
+
+## 10. Final evidence scoring [10_final_evidence_scoring.R]
+
+Combines multiple evidence dimensions into a final computational ranking.
+
+The integrated score considers:
+
+- Drug therapeutic score
+- Statistical significance
+- Number of cell types supported
+- Number of biological pathway themes
+- Strength of pathway enrichment
+
+## 11. Top-3 pathway validation [11_top3_pathway_validation.R]
+
+Performs focused pathway-level validation of the three highest-ranked drug candidates.
+
+## 12. Top-3 gene validation [12_top3_gene_validation.R]
+
+Examines gene-level overlap and supporting evidence for the top-ranked candidates.
+
+## 13. Figure generation [13_generate_figures.R]
+
+Generates publication-style summary figures describing:
+
+- Analysis workflow
+- Therapeutic drug landscape
+- Final evidence-based drug ranking
+- Biological pathway evidence for the top candidates
+
+---
+# Key Results
+
+The integrated computational framework prioritized three candidates:
+
+| Rank | Drug | Candidate class | Final evidence score|
+|-----------|------------|-----------|-----------|
+| 1 | Neratinib | Transition-associated | 0.9212 |
+| 2 | Vorinostat | Treatment-contrast-specific | 0.7058 |
+| 3 | Bortezomib | Treatment-contrast-specific | 0.4425 |
+
+## Neratinib
+
+Neratinib was the highest-ranked candidate and was supported across two luminal epithelial cell populations.
+
+The strongest pathway-level evidence involved:
+
+- Translation / ribosomal processes
+- Metabolic processes
+- Amino-acid stress response
+- Selenocysteine synthesis
+
+## Vorinostat
+
+Vorinostat showed strong treatment-associated evidence in basal epithelial cells.
+
+Major pathway themes included:
+
+- ECM / extracellular structure
+- Mitochondrial respiration
+- Oxidative phosphorylation
+
+## Bortezomib
+
+Bortezomib showed a similar basal epithelial treatment-associated pattern, with evidence involving:
+
+- ECM / extracellular structure
+- Mitochondrial respiration
+- Oxidative phosphorylation
+
+These results represent computational drug-repurposing hypotheses, not experimental validation or clinical recommendations.
+
+---
+
+# Repository Structure
+
+```text
+HER2-scRNAseq-Drug-Repurposing/
+│
+├── README.md
+├── LICENSE
+│
+├── docs/
+│   ├── analysis_overview.md
+│   ├── data_sources.md
+│   └── interpretation.md
+│
+├── scripts/
+│   ├── 01_loading_dataset.R
+│   ├── 02_single_cell_alignment.R
+│   ├── 03_DEG_limma.R
+│   ├── 04_prepare_drug_reference.R
+│   ├── 05_drug_scoring.R
+│   ├── 06_drug_comparison.R
+│   ├── 07_pathway_enrichment.R
+│   ├── 08_pathway_drug_integration.R
+│   ├── 09_comparative_validation.R
+│   ├── 10_final_evidence_scoring.R
+│   ├── 11_top3_pathway_validation.R
+│   ├── 12_top3_gene_validation.R
+│   └── 13_generate_figures.R
+│
+├── assets/
+│   ├── hulab_bannner.png
+│   └── hulab_workflow.png
+|
+├── results/
+│   ├── comparative_candidate_classes.csv
+│   ├── final_candidate_summary.txt
+│   ├── final_drug_evidence_scores.csv
+│   ├── final_top3_drugs.csv
+│   ├── nonredundant_pathway_themes.csv
+│   ├── top3_gene_overlap.csv
+│   ├── top3_gene_validation_summary.txt
+│   ├── top3_pathway_theme_summary.csv
+│   └── top3_strongest_pathways.csv
+│
+└── figures/
+    ├── Figure1_workflow.png
+    ├── Figure2_drug_landscape.png
+    ├── Figure3_final_drug_ranking.png
+    ├── Figure4_top3_biological_evidence.png
+    └── reference_annotations.pdf
+```
+---
+
+# Software and Tools
+
+The analysis was primarily performed using:
+
+- R
+- Seurat
+- limma
+- dplyr
+- ggplot2
+- g:Profiler
+- LINCS/L1000
+- NCBI GEO
 
 ---
 
@@ -118,48 +351,16 @@ See [`docs/data_sources.md`](docs/data_sources.md) for the complete dataset desc
 
 ---
 
-# Analysis Workflow
+# Limitations
 
-```text
-Public scRNA-seq datasets
-        │
-        ▼
-Dataset loading & preprocessing
-        │
-        ▼
-Single-cell alignment / integration
-        │
-        ▼
-Cell-type-specific transcriptional analysis
-        │
-        ▼
-Differential expression analysis
-        │
-        ├───────────────┐
-        ▼               ▼
-Disease signatures   HER2 state comparison
-        │               │
-        └───────┬───────┘
-                ▼
-       LINCS drug signatures
-                │
-                ▼
-        Drug signature scoring
-                │
-                ▼
-      Candidate drug landscape
-                │
-                ▼
-     Comparative validation
-                │
-                ▼
-       Pathway enrichment
-                │
-                ▼
-      Evidence integration
-                │
-                ▼
-      Top candidate validation
-                │
-                ▼
-      Final drug prioritization
+This analysis provides a computational framework for prioritizing candidate drugs based on transcriptional similarity and biological pathway evidence.
+
+Important limitations include:
+
+- Drug rankings are computational and require experimental validation.
+- LINCS perturbational signatures may not fully reproduce responses in HER2-positive breast cancer cells.
+- Single-cell datasets contain patient- and cell-state-specific variation.
+- Pathway enrichment identifies statistical associations rather than establishing causality.
+- The final evidence score is an analytical prioritization metric rather than a clinical efficacy score.
+
+Therefore, the top-ranked candidates should be interpreted as hypotheses for further investigation.
