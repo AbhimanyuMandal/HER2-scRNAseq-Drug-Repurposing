@@ -12,13 +12,15 @@ Single-cell transcriptomic analysis and LINCS-based computational drug repurposi
 
 </p>
 
+<p align="center">
+  
 <img src="https://img.shields.io/badge/R-4.x-blue?logo=r" />
 <img src="https://img.shields.io/badge/Seurat-scRNA--seq-blueviolet" />
 <img src="https://img.shields.io/badge/LINCS-Connectivity%20Analysis-orange" />
 <img src="https://img.shields.io/badge/Data-NCBI%20GEO-blue" />
 <img src="https://img.shields.io/badge/Drug%20Repurposing-Computational-red" />
 <img src="https://img.shields.io/badge/License-MIT-brightgreen" />
-
+</p>
 ---
 
 ## Overview
