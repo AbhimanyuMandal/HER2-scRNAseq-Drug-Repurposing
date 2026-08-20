@@ -1,11 +1,23 @@
-# HER2-Positive Breast Cancer scRNA-seq Drug Repurposing
+<p align="center">
+  <img src="assets/drug_repurposing_banner.png" alt="HER2 Luminal Breast Cancer Drug Repurposing Banner" width="100%">
+</p>
 
-> **Single-cell transcriptomic analysis and LINCS-based computational drug repurposing in HER2-positive breast cancer**
+<h1 align="center">
+HER2-Positive Breast Cancer scRNA-seq Drug Repurposing
+</h1>
 
-[![R](https://img.shields.io/badge/R-4.x-276DC3?logo=r&logoColor=white)](https://www.r-project.org/)
-[![Seurat](https://img.shields.io/badge/Seurat-scRNA--seq-4B8BBE)](https://satijalab.org/seurat/)
-[![LINCS](https://img.shields.io/badge/LINCS-L1000-orange)](https://clue.io/)
-[![GEO](https://img.shields.io/badge/Data-NCBI%20GEO-blue)](https://www.ncbi.nlm.nih.gov/geo/)
+<p align="center">
+
+Single-cell transcriptomic analysis and LINCS-based computational drug repurposing in HER2-positive breast cancer
+
+</p>
+
+<img src="https://img.shields.io/badge/R-4.x-blue?logo=r" />
+<img src="https://img.shields.io/badge/Seurat-scRNA--seq-blueviolet" />
+<img src="https://img.shields.io/badge/LINCS-Connectivity%20Analysis-orange" />
+<img src="https://img.shields.io/badge/Data-NCBI%20GEO-blue" />
+<img src="https://img.shields.io/badge/Drug%20Repurposing-Computational-red" />
+<img src="https://img.shields.io/badge/License-MIT-brightgreen" />
 
 ---
 
